@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6fa;
+            color: #333;
+        }
+        .header {
+            background-color: #4682b4;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+         .header .logo {
+            position: absolute;
+            left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+        }
+        .search-bar {
+            display: flex;
+            align-items: right;;
+            margin-left: 0px;
+        }
+        .header input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            margin-left: 300px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+        }
+
+        .content11 {
+            text-align: left; /* Выровнено по левому краю */
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .main {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .profile-header {
+            display: flex;
+            gap: 20px;
+            text-align: center;
+
+        }
+        .profile-header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .profile-info {
+            flex: 1;
+            margin-left: 10px;
+        }
+        .stats {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .stats div {
+            text-align: center;
+        }
+        .photos {
+            margin-top: 20px;
+        }
+        .photos img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .post {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .edit-button {
+            display: block;
+            margin: 20px auto 0;
+            padding: 10px 20px;
+            background-color: #4682b4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .edit-button:hover {
+            background-color: #315f8a;
+        }
+        .friends-section {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .friend {
+            text-align: center;
+        }
+        .friend img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .friend-name {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .photos {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<!-- Header -->
+<div class="header">
+    <div class="logo">VK</div>
+        <input type="text" placeholder="Поиск">
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="sidebar">
+        <a href="#">Моя страница</a>
+        <a href="#">Новости</a>
+        <a href="#">Сообщения</a>
+        <a href="http://localhost:63342/tasks/HTML/Springtask2/SPT2CHEAT.html?_ijt=8qeaaljlssu3n9d6enilv0tlo9&_ij_reload=RELOAD_ON_SAVE">Друзья</a>
+        <a href="#">Группы</a>
+        <a href="#">Фотографии</a>
+        <a href="#">Музыка</a>
+        <a href="#">Видео</a>
+    </div>
+    <div class="main">
+        <div class="profile-header">
+            <div>
+                <img src="CLS6.3.jpg" alt="Profile Picture">
+                <div class="imageDiv">
+                    <button>Редактировать</button>
+                    <div>
+                        <h3>Друзья</h3>
+                    </div>
+                </div>
+                <!-- Friends Section -->
+                <div class="friends-section">
+
+                    <div class="friend">
+                        <img src="BMW.jpg" alt="Friend 1">
+                        <div class="friend-name">BMW</div>
+                    </div>
+                    <div class="friend">
+                        <img src="Bentley.jpg" alt="Friend 2">
+                        <div class="friend-name">Bentley</div>
+                    </div>
+                    <div class="friend">
+                        <img src="Porsche.jpg" alt="Friend 3">
+                        <div class="friend-name">Porsche</div>
+                    </div>
+                    <div class="friend">
+                        <img src="Polls.jpg" alt="Friend 4">
+                        <div class="friend-name">Rolls-Royce</div>
+                    </div>
+                    <div class="friend">
+                        <img src="Ferrari.jpg" alt="Friend 5">
+                        <div class="friend-name">Ferrari</div>
+                    </div>
+                    <div class="friend">
+                        <img src="Maclaren.jpg" alt="Friend 6">
+                        <div class="friend-name">Mclaren</div>
+                    </div>
+                </div>
+            </div>
+            <div class="content11">
+                <h2>Mercedes Benz</h2>
+                <p>Life is good :)</p>
+                <p><strong>День рождения:</strong> 25 мая 2005 г.</p>
+                <p><strong>Город:</strong> Штутгард</p>
+                <p><strong>Семейное положение:</strong> Холост</p>
+                <p><strong>Место работы:</strong> BITLAB Academy</p>
+                <p><strong>Веб-сайт:</strong> <a href="https://ru.wikipedia.org/wiki/Mercedes-Benz_CLS-%D0%BA%D0%BB%D0%B0%D1%81%D1%81" target="_blank">www.wikipedia.kz</a></p>
+                <div class="stats">
+                    <div><strong>1,331</strong><br>друг</div>
+                    <div><strong>224</strong><br>подписчика</div>
+                    <div><strong>95</strong><br>фотографии</div>
+                    <div><strong>969</strong><br>видеозаписей</div>
+                    <div><strong>809</strong><br>аудиозаписей</div>
+                    <div><strong>140</strong><br>страниц</div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Button -->
+        <div class="photos">
+            <h3>Мои фотографии</h3>
+            <img src="CLS1.jpg" alt="Photo 1">
+            <img src="CLS2.jpg" alt="Photo 2">
+            <img src="CLS4.webp" alt="Photo 3">
+            <img src="CLS3.jpg" alt="Photo 4">
+        </div>
+        <div class="post">
+            <p><strong>5 апр в 17:42</strong></p>
+            <p>В его последнем сезоне в Mercedes этот восьмой чемпионат мира казался ему таким далеким, как никогда, поскольку команда продолжала бороться за то, чтобы соответствовать действующим правилам Формулы-1.
+                Так было с 2022 года, когда они были впервые представлены, хотя Хэмилтон одержал две победы в этой кампании в Сильверстоуне и Спа.
+                Однако в прошлый раз в Бразилии Хэмилтон назвал свою W15 худшей машиной Формулы-1, на которой он когда-либо ездил, и третья победа в сезоне выглядела маловероятной, учитывая, что впереди всего три гран-при.
+                Однако бывшая звезда "Формулы-1" Дэвид Култхард похвалил Хэмилтона за потрясающий разворот в плане формы, а экс-пилот "Ред Булл" выразил оптимизм, что Хэмилтон может завершить сезон на высоком уровне.
+                "Он вполне мог бы выиграть свой последний Гран-при за Mercedes в Абу-Даби", - сказал Култхард в интервью Mirror.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

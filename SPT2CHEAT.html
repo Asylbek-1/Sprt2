@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK Friends Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f6fb;
+        }
+        header {
+            background-color: #5181b8;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        header .logo {
+            position: absolute;
+            left: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        header input {
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+            width: 300px;
+            margin-left: -400px;
+        }
+        .container {
+            display: flex;
+            margin-top: 10px;
+        }
+        nav {
+            width: 20%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin-bottom: 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .main {
+            width: 60%;
+            background-color: white;
+            margin: 0 10px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .friends {
+            display: flex;
+            flex-direction: column;
+        }
+        .friend {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .friend img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .friend .info {
+            display: flex;
+            flex-direction: column;
+        }
+        .friend .info span {
+            font-size: 14px;
+            color: #333;
+        }
+        .friend .info a {
+            text-decoration: none;
+            color: #5181b8;
+            font-size: 12px;
+        }
+        .sidebar {
+            width: 20%;
+            background-color: white;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar .section {
+            margin-bottom: 20px;
+        }
+        .sidebar .section h4 {
+            margin-bottom: 10px;
+        }
+        .sidebar .section .suggestion {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .sidebar .section .suggestion img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo">VK</div>
+    <input type="text" placeholder="Поиск">
+</header>
+<div class="container">
+    <nav>
+        <ul>
+            <li><a href="#">Моя страница</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Сообщения</a></li>
+            <li><a href="#">Друзья</a></li>
+            <li><a href="#">Группы</a></li>
+            <li><a href="#">Фотографии</a></li>
+            <li><a href="#">Музыка</a></li>
+            <li><a href="#">Видео</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="friends">
+            <div>Все друзья</div>
+
+            <div class="friend">
+                <img src="Bentley.jpg" alt="Фото">
+                <div class="info">
+                    <span>Bentley</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="CLS2.jpg" alt="Фото">
+                <div class="info">
+                    <span>CLS</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="Maclaren.jpg" alt="Фото">
+                <div class="info">
+                    <span>Mclaren</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="Polls.jpg" alt="Фото">
+                <div class="info">
+                    <span>Rolls Royce</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="Maserati.jpg" alt="Фото">
+                <div class="info">
+                    <span>Maserati</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="RS8.jpg" alt="Фото">
+                <div class="info">
+                    <span>Audi</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="Porsche.jpg" alt="Фото">
+                <div class="info">
+                    <span>Porsche</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="CLS3.jpg" alt="Фото">
+                <div class="info">
+                    <span>CLS3</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="Mercedes.jpg" alt="Фото">
+                <div class="info">
+                    <span>Mercedes</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="Genesis.jpg" alt="Фото">
+                <div class="info">
+                    <span>Genesis</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <div class="friend">
+                <img src="CLS1.jpg" alt="Фото">
+                <div class="info">
+                    <span>Mercedes Benz</span>
+                    <a href="#">Написать сообщение</a>
+                </div>
+            </div>
+            <!-- Добавьте другие элементы по аналогии -->
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="section">
+            <h4>Мои друзья</h4>
+            <ul>
+                <li>Заявки в друзья</li>
+                <li>Телефонная книга</li>
+                <li>Новые друзья</li>
+                <li>Поиск друзей</li>
+                <li>Списки друзей</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h4>Возможные друзья</h4>
+            <div class="suggestion">
+                <img src="Porsche.jpg" alt="Фото">
+                <div>
+                    <span>Porsche</span>
+                    <br>
+                    <span style="font-size: 12px;">3 общих друга</span>
+                </div>
+            </div>
+            <div class="suggestion">
+                <img src="CLS2.jpg" alt="Фото">
+                <div>
+                    <span>Mercedes Benz</span>
+                    <br>
+                    <span style="font-size: 12px;">2 общих друга</span>
+                </div>
+            </div>
+            <div class="suggestion">
+                <img src="RS8.jpg" alt="Фото">
+                <div>
+                    <span>Audi</span>
+                    <br>
+                    <span style="font-size: 12px;">23 общих друга</span>
+                </div>
+            </div>
+            <!-- Другие возможные друзья -->
+        </div>
+    </div>
+</div>
+</body>
+</html>
